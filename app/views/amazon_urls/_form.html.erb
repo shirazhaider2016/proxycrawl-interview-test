@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <%= form_with(model: amazon_url) do |form| %>
+      <% if amazon_url.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(amazon_url.errors.count, "error") %> prohibited this amazon_url from being saved:</h2>
+
+          <ul>
+            <% amazon_url.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <%= form.label :title %>
+            <%= form.text_field :title, class: "form-control", required: true %>
+          </div>
+          <div class="form-group">
+            <%= form.label :url %>
+            <%= form.text_field :url, class: "form-control", required: true %>
+          </div>
+          <div class="actions">
+            <%= form.submit 'Save', class: 'btn btn-success', disable_with: "Submitting..." %>
+            <%= link_to 'Back', amazon_urls_path, class: 'btn btn-danger' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

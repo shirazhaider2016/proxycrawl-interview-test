@@ -1,0 +1,2 @@
+module AmazonUrlsHelper
+end

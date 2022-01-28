@@ -1,0 +1,7 @@
+{
+    id: @amazon_url.id,
+    title: @amazon_url.title,
+    amazon_url: @amazon_url.url,
+    created_at: @amazon_url.created_at,
+    updated_at: @amazon_url.updated_at
+}

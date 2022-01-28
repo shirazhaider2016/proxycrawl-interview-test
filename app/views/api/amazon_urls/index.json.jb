@@ -1,0 +1,17 @@
+@amazon_urls.map do |amazon_url|
+  {
+    id: amazon_url.id,
+    title: amazon_url.title,
+    amazon_url: amazon_url.url,
+    url: amazon_url_url(amazon_url, format: :json),
+    total_count: @pagy.count,
+    items: @pagy.items,
+    next_page: @pagy.next,
+    page: @pagy.page,
+    pages: @pagy.pages,
+    previous_page: @pagy.prev,
+    page_info: pagy_page_entries_info(@pagy),
+    created_at: amazon_url.created_at,
+    updated_at: amazon_url.updated_at
+  }
+end

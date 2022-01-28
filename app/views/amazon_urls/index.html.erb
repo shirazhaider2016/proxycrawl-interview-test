@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-lg-12 p-1">
+    <div class="card card-primary card-outline">
+      <div class="card-body">
+        <div class="card-text">
+          <a href="<%= new_amazon_url_path %>" class="btn btn-sm btn-success">Add New URL</a>
+          <p id="notice"><%= notice %></p>
+          <div class="d-flex justify-content-between">
+            <%= pagy_page_entries_info(@pagy) %>
+            <%== pagy_bootstrap_nav(@pagy) %>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th><%= sort_link(@q, :title, 'Title') %></th>
+                <th><%= sort_link(@q, :url, 'URL') %></th>
+                <th colspan="3"></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% @amazon_urls.each_with_index do |amz, index| %>
+                <tr>
+                  <td><%= index + 1 %></td>
+                  <td><%= amz.title %></td>
+                  <td><%= amz.url %></td>
+                  <td><%= link_to 'Edit', edit_amazon_url_path(amz) %></td>
+                  <td><%= link_to 'Destroy', amz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+              <% end %>
+              </tbody>
+            </table>
+            <div class="float-right">
+              <%== pagy_bootstrap_nav(@pagy) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="row" style="margin-top: 20px">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-body table-responsive">
+        <p id="notice"><%= notice %></p>
+        <table class="table-hover table-striped table">
+          <tr>
+            <td>Asin</td>
+            <td class="break_space"><%= @product.asin %></td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td class="break_space"><%= @product.title %></td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td><%= number_to_currency(@product.price, unit: @product.currency_symbol) %></td>
+          </tr>
+          <tr>
+            <td>Customer review</td>
+            <td><%= @product.customer_review %></td>
+          </tr>
+          <tr>
+            <td>Review count</td>
+            <td><%= @product.review_count %></td>
+          </tr>
+        </table>
+        <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-sm btn-primary' %>
+        <%= link_to 'Back', products_path, class: 'btn btn-sm btn-danger' %>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <h1>Image</h1>
+    <img src="<%= @product.image_url %>" alt="Product image">
+    <br>
+  </div>
+</div>

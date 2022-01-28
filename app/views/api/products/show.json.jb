@@ -1,0 +1,11 @@
+{
+    id: @product.id,
+    asin: @product.asin,
+    title: @product.title,
+    image_url: @product.image_url,
+    price: number_to_currency(@product.price, unit: @product.currency_symbol),
+    customer_review: @product.customer_review,
+    review_count: @product.review_count,
+    created_at: @product.created_at,
+    updated_at: @product.updated_at
+}
