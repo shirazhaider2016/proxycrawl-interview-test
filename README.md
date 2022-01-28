@@ -122,15 +122,15 @@ Api token is added in env file
 
 Goto documents folder and you will find screenshots and json collections
 
-![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/documents/1.png?raw=true)
+![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/blob/master/documents/1.png?raw=true)
 
-![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/documents/2.png?raw=true)
+![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/blob/master/documents/2.png?raw=true)
 
-![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/documents/3.png?raw=true)
+![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/blob/master/documents/3.png?raw=true)
 
-![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/documents/4.png?raw=true)
+![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/blob/master/documents/4.png?raw=true)
 
-![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/documents/4.png?raw=true)
+![alt text](https://github.com/shirazhaider2016/proxycrawl-interview-test/blob/master/documents/5.png?raw=true)
 
     
 ##API Documentation link
